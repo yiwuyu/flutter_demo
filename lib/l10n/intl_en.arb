@@ -1,1 +1,15 @@
-{}
+{
+  "general_appbar_title": "General",
+  "general_darkmode": "Dark Mode",
+  "general_language": "Language",
+  "general_textsize": "Text Size",
+  "general_background": "Background",
+  "general_sticker": "My Stickers",
+  "general_sourcenet": "Photos, Videos, Files & Calls",
+  "general_speaker": "Turn Off Speaker",
+  "general_discover": "Manage Discover",
+  "general_tool": "WeChat Tools",
+  "general_backup": "Backup & Migrate Chats",
+  "general_storage": "Storage",
+  "general_clear": "Clear Chat History"
+}

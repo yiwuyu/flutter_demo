@@ -21,6 +21,18 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-
+    "general_appbar_title" : MessageLookupByLibrary.simpleMessage("General"),
+    "general_background" : MessageLookupByLibrary.simpleMessage("Background"),
+    "general_backup" : MessageLookupByLibrary.simpleMessage("Backup & Migrate Chats"),
+    "general_clear" : MessageLookupByLibrary.simpleMessage("Clear Chat History"),
+    "general_darkmode" : MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "general_discover" : MessageLookupByLibrary.simpleMessage("Manage Discover"),
+    "general_language" : MessageLookupByLibrary.simpleMessage("Language"),
+    "general_sourcenet" : MessageLookupByLibrary.simpleMessage("Photos, Videos, Files & Calls"),
+    "general_speaker" : MessageLookupByLibrary.simpleMessage("Turn Off Speaker"),
+    "general_sticker" : MessageLookupByLibrary.simpleMessage("My Stickers"),
+    "general_storage" : MessageLookupByLibrary.simpleMessage("Storage"),
+    "general_textsize" : MessageLookupByLibrary.simpleMessage("Text Size"),
+    "general_tool" : MessageLookupByLibrary.simpleMessage("WeChat Tools")
   };
 }

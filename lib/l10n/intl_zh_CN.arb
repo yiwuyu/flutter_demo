@@ -1,0 +1,15 @@
+{
+  "general_appbar_title": "通用",
+  "general_darkmode": "深色模式",
+  "general_language": "多语言",
+  "general_textsize": "字体大小",
+  "general_background": "聊天背景",
+  "general_sticker": "我的表情",
+  "general_sourcenet": "照片、视频、文件和通话",
+  "general_speaker": "听筒模式",
+  "general_discover": "发现页管理",
+  "general_tool": "辅助功能",
+  "general_backup": "聊天记录备份与迁移",
+  "general_storage": "存储空间",
+  "general_clear": "清空聊天记录"
+}
