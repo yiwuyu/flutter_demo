@@ -24,10 +24,6 @@ class LanguageRadio extends StatelessWidget {
               );
             },
           ),
-          SizedBox(
-            height: 20,
-          ),
-          Text(S.of(context).general_language),
         ],
       ),
     );
