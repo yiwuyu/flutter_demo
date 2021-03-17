@@ -23,7 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static _notInlinedMessages(_) => <String, Function> {
     "general_appbar_title" : MessageLookupByLibrary.simpleMessage("一般"),
     "general_background" : MessageLookupByLibrary.simpleMessage("聊天背景"),
-    "general_backup" : MessageLookupByLibrary.simpleMessage("聊天巨鹿備份與轉移"),
+    "general_backup" : MessageLookupByLibrary.simpleMessage("聊天記錄備份與轉移"),
     "general_clear" : MessageLookupByLibrary.simpleMessage("刪除對話記錄"),
     "general_darkmode" : MessageLookupByLibrary.simpleMessage("深色模式"),
     "general_discover" : MessageLookupByLibrary.simpleMessage("發現頁管理"),
