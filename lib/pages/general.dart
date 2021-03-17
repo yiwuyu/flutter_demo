@@ -10,10 +10,21 @@ class _ListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      child: ListTile(
-        title: title,
-        onTap: onTap,
+      // color: Colors.white,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border(
+          bottom: BorderSide(
+            width: 1.0,
+            color: Color(0xffedeced),
+          ),
+        ),
+      ),
+      child: Material(
+        child: ListTile(
+          title: title,
+          onTap: onTap,
+        ),
       ),
     );
   }

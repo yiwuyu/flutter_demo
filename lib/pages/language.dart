@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:locale_demo/generated/l10n.dart';
+import 'package:locale_demo/model/locale.dart';
+import 'package:provider/provider.dart';
 
-class LanguageRadio extends StatefulWidget {
-  @override
-  _LanguageRadioState createState() => _LanguageRadioState();
-}
-
-class _LanguageRadioState extends State<LanguageRadio> {
-  static const localeList = ['en', 'zh_CN', 'zh_TW'];
-  int _localeIndex = 0;
+class LanguageRadio extends StatelessWidget {
   static String getLocaleName(index) {
     return ['English', '简体中文', '繁體中文'][index];
   }
@@ -19,20 +14,16 @@ class _LanguageRadioState extends State<LanguageRadio> {
       child: Column(
         children: <Widget>[
           ListView.builder(
-            itemCount: localeList.length,
+            itemCount: LocaleModel.localeList.length,
             shrinkWrap: true,
             itemBuilder: (context, index) {
+              var model = Provider.of<LocaleModel>(context);
               return RadioListTile(
                 value: index,
-                groupValue: _localeIndex,
+                groupValue: model.localeIndex,
                 title: Text(getLocaleName(index)),
                 onChanged: (index) {
-                  print(index);
-                  setState(() {
-                    _localeIndex = index;
-                  });
-                  var value = localeList[index].split('_');
-                  S.load(Locale(value[0], value.length == 2 ? value[1] : ''));
+                  model.switchLocale(index);
                 },
               );
             },
