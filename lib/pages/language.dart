@@ -4,10 +4,6 @@ import 'package:locale_demo/model/locale.dart';
 import 'package:provider/provider.dart';
 
 class LanguageRadio extends StatelessWidget {
-  static String getLocaleName(index) {
-    return ['English', '简体中文', '繁體中文'][index];
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,7 +17,7 @@ class LanguageRadio extends StatelessWidget {
               return RadioListTile(
                 value: index,
                 groupValue: model.localeIndex,
-                title: Text(getLocaleName(index)),
+                title: Text(LocaleModel.getLocaleName(index)),
                 onChanged: (index) {
                   model.switchLocale(index);
                 },
